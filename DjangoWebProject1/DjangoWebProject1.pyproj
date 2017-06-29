@@ -58,6 +58,7 @@
     <Content Include="app\templates\app\interview_questions.html" />
     <Content Include="app\templates\app\single_question.html" />
     <None Include="BDresler - Web Deploy.pubxml" />
+    <None Include="BDresler87 - Web Deploy.pubxml" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
