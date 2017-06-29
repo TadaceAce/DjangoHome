@@ -5,6 +5,8 @@
     <Name>DjangoWebProject1</Name>
     <RootNamespace>DjangoWebProject1</RootNamespace>
     <NameOfLastUsedPublishProfile>BDresler - Web Deploy</NameOfLastUsedPublishProfile>
+    <InterpreterId>{8be40633-aa3c-4364-897c-dcef74926c33}</InterpreterId>
+    <InterpreterVersion>3.4</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -57,8 +59,8 @@
     <Content Include="app\templates\base.html" />
     <Content Include="app\templates\app\interview_questions.html" />
     <Content Include="app\templates\app\single_question.html" />
+    <Content Include="runtime.txt" />
     <None Include="BDresler - Web Deploy.pubxml" />
-    <None Include="BDresler87 - Web Deploy.pubxml" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
@@ -89,6 +91,19 @@
     <None Include="readme.mht">
       <SubType>WebBrowser</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>{8be40633-aa3c-4364-897c-dcef74926c33}</Id>
+      <BaseInterpreter>{315375eb-d64c-4f5c-8056-c39794e56095}</BaseInterpreter>
+      <Version>3.4</Version>
+      <Description>env (env)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>Amd64</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
