@@ -15,16 +15,15 @@ import app.views
 from django.contrib import admin
 admin.autodiscover()
 
+
 urlpatterns = [
     # Examples:
-    url(r'^$', app.views.home, name='home'),
+    url(r'^$', app.views.home),
     url(r'^admin/', admin.site.urls),
 
     url(r'^interview_questions/$', app.views.InterviewView.as_view(), name='interview_questions'),
 
-    url(r'^(?P<pk>[0-9]+)/$', app.views.SingleQuestionView.as_view(), name='detail'),
-    
-    
+    url(r'^(?P<pk>[0-9]+)/$', app.views.SingleQuestionView.as_view(), name='detail'),      
     
     url(r'^login/$',
         django.contrib.auth.views.login,
@@ -38,6 +37,7 @@ urlpatterns = [
             }
         },
         name='login'),
+
     url(r'^logout$',
         django.contrib.auth.views.logout,
         {
