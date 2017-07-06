@@ -3,13 +3,15 @@ Definition of views.
 """
 
 from django.shortcuts import render
-from django.http import HttpRequest
+from django.http import HttpRequest, HttpResponse
 from django.template import RequestContext
 from datetime import datetime
 
 from .models import Question
 
 from django.views import generic
+
+import reportlab
 
 def home(request):
     """Renders the home page."""
@@ -22,6 +24,13 @@ def home(request):
             'year':datetime.now().year,
         }
     )
+
+def resume_view(request):
+    image_data = open("static/app/BDreslerResume.png", "rb").read()  
+    return render(request, 'app/resume.html')
+
+def portfolio_view(request):
+    return render(request, 'app/portfolio.html')
 
 
 class InterviewView(generic.ListView):
@@ -40,7 +49,7 @@ class SingleQuestionView(generic.DetailView):
     template_name = 'app/single_question.html'
 
     def get_context_data(self, **kwargs):
-        context = super(SingleQuestionView, self).get_context_data(**kwargs)
-        context['all_questions'] = Question.objects.all()
+        context = super(SingleQuestionView, self).get_context_data(**kwargs)     
+        context['full_question_list'] = Question.objects.all()
         return context
 

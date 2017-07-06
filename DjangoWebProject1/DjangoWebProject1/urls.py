@@ -21,6 +21,10 @@ urlpatterns = [
     url(r'^$', app.views.home),
     url(r'^admin/', admin.site.urls),
 
+    url(r'^resume/', app.views.resume_view),
+    url(r'^portfolio/', app.views.portfolio_view),
+
+
     url(r'^interview_questions/$', app.views.InterviewView.as_view(), name='interview_questions'),
 
     url(r'^(?P<pk>[0-9]+)/$', app.views.SingleQuestionView.as_view(), name='detail'),      

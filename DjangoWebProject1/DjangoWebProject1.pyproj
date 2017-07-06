@@ -5,8 +5,8 @@
     <Name>DjangoWebProject1</Name>
     <RootNamespace>DjangoWebProject1</RootNamespace>
     <NameOfLastUsedPublishProfile>BDresler - Web Deploy</NameOfLastUsedPublishProfile>
-    <InterpreterId>{8be40633-aa3c-4364-897c-dcef74926c33}</InterpreterId>
-    <InterpreterVersion>3.4</InterpreterVersion>
+    <InterpreterId>{7c243675-4eda-4674-bc01-21629f9fe202}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -56,6 +56,10 @@
     <Folder Include="DjangoWebProject1\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\static\app\BDreslerResume.pdf" />
+    <Content Include="app\static\app\BDreslerResume.png" />
+    <Content Include="app\templates\app\portfolio.html" />
+    <Content Include="app\templates\app\resume.html" />
     <Content Include="app\templates\base.html" />
     <Content Include="app\templates\app\interview_questions.html" />
     <Content Include="app\templates\app\single_question.html" />
@@ -93,16 +97,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Interpreter Include="env\">
-      <Id>{8be40633-aa3c-4364-897c-dcef74926c33}</Id>
-      <BaseInterpreter>{315375eb-d64c-4f5c-8056-c39794e56095}</BaseInterpreter>
-      <Version>3.4</Version>
-      <Description>env (env)</Description>
+    <Interpreter Include="env1\">
+      <Id>{7c243675-4eda-4674-bc01-21629f9fe202}</Id>
+      <BaseInterpreter>{dc700f99-9ce7-4f12-8870-c42dbca62d03}</BaseInterpreter>
+      <Version>2.7</Version>
+      <Description>env1 (Python36)</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
-      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <WindowsInterpreterPath>Scripts\python.exe</WindowsInterpreterPath>
       <LibraryPath>Lib\</LibraryPath>
-      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
-      <Architecture>Amd64</Architecture>
+      <PathEnvironmentVariable>
+      </PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
     </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
