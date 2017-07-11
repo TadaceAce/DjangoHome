@@ -26,7 +26,7 @@ def home(request):
     )
 
 def resume_view(request):
-    image_data = open("static/app/BDreslerResume.png", "rb").read()  
+    #image_data = open("static/app/BDreslerResume.png", "rb").read()  
     return render(request, 'app/resume.html')
 
 def portfolio_view(request):
