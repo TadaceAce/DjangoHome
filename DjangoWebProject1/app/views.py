@@ -11,7 +11,7 @@ from .models import Question
 
 from django.views import generic
 
-import reportlab
+
 
 def home(request):
     """Renders the home page."""

@@ -5,8 +5,8 @@
     <Name>DjangoWebProject1</Name>
     <RootNamespace>DjangoWebProject1</RootNamespace>
     <NameOfLastUsedPublishProfile>BDresler - Web Deploy</NameOfLastUsedPublishProfile>
-    <InterpreterId>{7c243675-4eda-4674-bc01-21629f9fe202}</InterpreterId>
-    <InterpreterVersion>2.7</InterpreterVersion>
+    <InterpreterId>{d5c4c173-4351-4f31-9c3e-1b13ea8ce1af}</InterpreterId>
+    <InterpreterVersion>3.4</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -97,17 +97,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Interpreter Include="env1\">
-      <Id>{7c243675-4eda-4674-bc01-21629f9fe202}</Id>
-      <BaseInterpreter>{dc700f99-9ce7-4f12-8870-c42dbca62d03}</BaseInterpreter>
-      <Version>2.7</Version>
-      <Description>env1 (Python36)</Description>
+    <InterpreterReference Include="{315375eb-d64c-4f5c-8056-c39794e56095}\3.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>{d5c4c173-4351-4f31-9c3e-1b13ea8ce1af}</Id>
+      <BaseInterpreter>{315375eb-d64c-4f5c-8056-c39794e56095}</BaseInterpreter>
+      <Version>3.4</Version>
+      <Description>env (env)</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
-      <WindowsInterpreterPath>Scripts\python.exe</WindowsInterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <LibraryPath>Lib\</LibraryPath>
-      <PathEnvironmentVariable>
-      </PathEnvironmentVariable>
-      <Architecture>X86</Architecture>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>Amd64</Architecture>
     </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
