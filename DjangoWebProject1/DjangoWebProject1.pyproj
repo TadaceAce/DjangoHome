@@ -56,7 +56,10 @@
     <Folder Include="DjangoWebProject1\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\static\app\background-full.jpg" />
     <Content Include="app\static\app\BDreslerResume.png" />
+    <Content Include="app\static\app\profile.png" />
+    <Content Include="app\static\app\white-canvas-background.jpg" />
     <Content Include="app\templates\app\portfolio.html" />
     <Content Include="app\templates\app\resume.html" />
     <Content Include="app\templates\base.html" />

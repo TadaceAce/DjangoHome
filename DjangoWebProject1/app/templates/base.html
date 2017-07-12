@@ -12,13 +12,33 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
+
+<style>
+.container {
+    background-image: url("{% static "/app/white-canvas-background.jpg" %}");
+    background-size: 100%;
+    background-repeat: repeat;
+}
+.container-full {
+  margin: 0 auto;
+  background-size: 100%;  
+  background-image: url("{% static "/app/background-full.jpg" %}");
+  background-repeat: repeat;
+}
+ img {
+    float: right;
+    margin: 0 0 10px 10px;
+} 
+</style>
+
+
 <body>
 
-
-<div style = "background:#5CD5E1 !important" width ="100% !important" >
-  <div class="container">
+<div class="container-full">
+  <div class="container" style="background:#e6e6e6 !important">
   <h3>Welcome </h3>
-    <p> Thank you for visiting my site. I hope it lives up to expectations. </p>
+   <!-- <p> Thank you for visiting my site. </p>-->
   <p></p>
   <ul class="nav nav-tabs nav-justified">    
     <li><a href=/>Home</a></li>
@@ -26,13 +46,15 @@
     <li><a href=/interview_questions/>Questions</a></li>
     <li><a href=/portfolio/>Portfolio</a></li>
   </ul>
-  </div>
-</div>
+        
+ </div>
 
 
 
+  
  {% block content %}
 {% endblock %}
+ 
 
 
 
