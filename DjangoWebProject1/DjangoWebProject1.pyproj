@@ -56,7 +56,6 @@
     <Folder Include="DjangoWebProject1\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\static\app\BDreslerResume.pdf" />
     <Content Include="app\static\app\BDreslerResume.png" />
     <Content Include="app\templates\app\portfolio.html" />
     <Content Include="app\templates\app\resume.html" />
