@@ -16,16 +16,22 @@
 
 <style>
 .container {
-    background-image: url("{% static "/app/white-canvas-background.jpg" %}");
+    background-image: url("{% static "/app/white-canvas-background.png" %}");
     background-size: 100%;
-    background-repeat: repeat;
+    background-repeat: repeat;    
+    overflow: auto;
 }
 .container-full {
   margin: 0 auto;
   background-size: 100%;  
   background-image: url("{% static "/app/background-full.jpg" %}");
   background-repeat: repeat;
+  height: 100vh; 
+  overflow: auto;
+
 }
+
+
  img {
     float: right;
     margin: 0 0 10px 10px;
@@ -34,9 +40,8 @@
 
 
 <body>
-
 <div class="container-full">
-  <div class="container" style="background:#e6e6e6 !important">
+  <div class="container" style="background:#e6e6e6">
   <h3>Welcome </h3>
    <!-- <p> Thank you for visiting my site. </p>-->
   <p></p>
@@ -47,14 +52,14 @@
     <li><a href=/portfolio/>Portfolio</a></li>
   </ul>
         
- </div>
+</div>
 
 
 
   
  {% block content %}
 {% endblock %}
- 
+
 
 
 

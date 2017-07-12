@@ -5,8 +5,8 @@
     <Name>DjangoWebProject1</Name>
     <RootNamespace>DjangoWebProject1</RootNamespace>
     <NameOfLastUsedPublishProfile>BDresler - Web Deploy</NameOfLastUsedPublishProfile>
-    <InterpreterId>{d5c4c173-4351-4f31-9c3e-1b13ea8ce1af}</InterpreterId>
-    <InterpreterVersion>3.4</InterpreterVersion>
+    <InterpreterId>{dc700f99-9ce7-4f12-8870-c42dbca62d03}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -60,6 +60,7 @@
     <Content Include="app\static\app\BDreslerResume.png" />
     <Content Include="app\static\app\profile.png" />
     <Content Include="app\static\app\white-canvas-background.jpg" />
+    <Content Include="app\static\app\white-canvas-background.png" />
     <Content Include="app\templates\app\portfolio.html" />
     <Content Include="app\templates\app\resume.html" />
     <Content Include="app\templates\base.html" />
@@ -99,7 +100,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="{315375eb-d64c-4f5c-8056-c39794e56095}\3.4" />
+    <InterpreterReference Include="{dc700f99-9ce7-4f12-8870-c42dbca62d03}\2.7" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
